@@ -1,0 +1,6 @@
+C:\Users\Aravind PC\source\repos\Project5\LoginAndCreate\obj\Debug\LoginAndCreate.csproj.CoreCompileInputs.cache
+C:\Users\Aravind PC\source\repos\Project5\LoginAndCreate\bin\LoginAndCreate.dll.config
+C:\Users\Aravind PC\source\repos\Project5\LoginAndCreate\bin\LoginAndCreate.dll
+C:\Users\Aravind PC\source\repos\Project5\LoginAndCreate\bin\LoginAndCreate.pdb
+C:\Users\Aravind PC\source\repos\Project5\LoginAndCreate\obj\Debug\LoginAndCreate.dll
+C:\Users\Aravind PC\source\repos\Project5\LoginAndCreate\obj\Debug\LoginAndCreate.pdb
