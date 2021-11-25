@@ -1,0 +1,14 @@
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\bin\StorageTest.dll.config
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\bin\StorageTest.dll
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\bin\StorageTest.pdb
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\obj\Debug\SaveAndRetrieve.csproj.AssemblyReference.cache
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\obj\Debug\SaveAndRetrieve.csproj.CoreCompileInputs.cache
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\obj\Debug\StorageTest.dll
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\obj\Debug\StorageTest.pdb
+C:\Users\Aravind PC\source\repos\SaveAndRetrieve\SaveAndRetrieve\bin\StorageTest.dll.config
+C:\Users\Aravind PC\source\repos\SaveAndRetrieve\SaveAndRetrieve\bin\StorageTest.dll
+C:\Users\Aravind PC\source\repos\SaveAndRetrieve\SaveAndRetrieve\bin\StorageTest.pdb
+C:\Users\Aravind PC\source\repos\SaveAndRetrieve\SaveAndRetrieve\obj\Debug\SaveAndRetrieve.csproj.AssemblyReference.cache
+C:\Users\Aravind PC\source\repos\SaveAndRetrieve\SaveAndRetrieve\obj\Debug\SaveAndRetrieve.csproj.CoreCompileInputs.cache
+C:\Users\Aravind PC\source\repos\SaveAndRetrieve\SaveAndRetrieve\obj\Debug\StorageTest.dll
+C:\Users\Aravind PC\source\repos\SaveAndRetrieve\SaveAndRetrieve\obj\Debug\StorageTest.pdb

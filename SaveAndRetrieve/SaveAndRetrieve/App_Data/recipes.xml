@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Recipes>
+  <User Username="Lohitha">
+    <Recipe>Pumpkin Pie</Recipe>
+    <Recipe>Mashed Potatoes</Recipe>
+  </User>
+  <User Username="Superman">
+    <Recipe>Apple Pie</Recipe>
+    <Recipe>Sweet Corn Salsa</Recipe>
+  </User>
+  <User Username="Lohitha">
+    <Recipe>save this recipe</Recipe>
+  </User>
+</Recipes>

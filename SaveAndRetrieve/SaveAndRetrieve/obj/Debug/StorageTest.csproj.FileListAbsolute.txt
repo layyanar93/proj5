@@ -1,0 +1,7 @@
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\obj\Debug\StorageTest.csproj.AssemblyReference.cache
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\obj\Debug\StorageTest.csproj.CoreCompileInputs.cache
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\bin\StorageTest.dll.config
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\bin\StorageTest.dll
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\bin\StorageTest.pdb
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\obj\Debug\StorageTest.dll
+C:\Users\Aravind PC\source\repos\StorageTest\StorageTest\obj\Debug\StorageTest.pdb
