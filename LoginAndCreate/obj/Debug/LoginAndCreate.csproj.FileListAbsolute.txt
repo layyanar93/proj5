@@ -7,7 +7,6 @@ C:\Users\Aravind PC\source\repos\Project5\LoginAndCreate\obj\Debug\LoginAndCreat
 Z:\Documents\GitHub\proj5\LoginAndCreate\bin\LoginAndCreate.dll.config
 Z:\Documents\GitHub\proj5\LoginAndCreate\bin\LoginAndCreate.dll
 Z:\Documents\GitHub\proj5\LoginAndCreate\bin\LoginAndCreate.pdb
-Z:\Documents\GitHub\proj5\LoginAndCreate\bin\EncryptDecryptLib.dll
 Z:\Documents\GitHub\proj5\LoginAndCreate\bin\EncryptDecryptLib.pdb
 Z:\Documents\GitHub\proj5\LoginAndCreate\obj\Debug\LoginAndCreate.csprojAssemblyReference.cache
 Z:\Documents\GitHub\proj5\LoginAndCreate\obj\Debug\LoginAndCreate.csproj.CoreCompileInputs.cache
