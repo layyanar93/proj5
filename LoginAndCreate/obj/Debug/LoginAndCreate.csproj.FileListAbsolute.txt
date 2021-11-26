@@ -4,3 +4,13 @@ C:\Users\Aravind PC\source\repos\Project5\LoginAndCreate\bin\LoginAndCreate.dll
 C:\Users\Aravind PC\source\repos\Project5\LoginAndCreate\bin\LoginAndCreate.pdb
 C:\Users\Aravind PC\source\repos\Project5\LoginAndCreate\obj\Debug\LoginAndCreate.dll
 C:\Users\Aravind PC\source\repos\Project5\LoginAndCreate\obj\Debug\LoginAndCreate.pdb
+Z:\Documents\GitHub\proj5\LoginAndCreate\bin\LoginAndCreate.dll.config
+Z:\Documents\GitHub\proj5\LoginAndCreate\bin\LoginAndCreate.dll
+Z:\Documents\GitHub\proj5\LoginAndCreate\bin\LoginAndCreate.pdb
+Z:\Documents\GitHub\proj5\LoginAndCreate\bin\EncryptDecryptLib.dll
+Z:\Documents\GitHub\proj5\LoginAndCreate\bin\EncryptDecryptLib.pdb
+Z:\Documents\GitHub\proj5\LoginAndCreate\obj\Debug\LoginAndCreate.csprojAssemblyReference.cache
+Z:\Documents\GitHub\proj5\LoginAndCreate\obj\Debug\LoginAndCreate.csproj.CoreCompileInputs.cache
+Z:\Documents\GitHub\proj5\LoginAndCreate\obj\Debug\LoginAndCreate.csproj.CopyComplete
+Z:\Documents\GitHub\proj5\LoginAndCreate\obj\Debug\LoginAndCreate.dll
+Z:\Documents\GitHub\proj5\LoginAndCreate\obj\Debug\LoginAndCreate.pdb

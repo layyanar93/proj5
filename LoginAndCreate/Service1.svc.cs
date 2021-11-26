@@ -9,6 +9,7 @@ using System.Text;
 using System.Web;
 using System.Xml;
 using System.Xml.Linq;
+using EncryptDecryptLib;
 
 namespace LoginAndCreate
 {
@@ -22,7 +23,6 @@ namespace LoginAndCreate
         {
             return string.Format("You entered: {0}", value);
         }
-        EncDecServiceReference.Service1Client EncDecRef = new EncDecServiceReference.Service1Client(); // proxy to encrypt/decrypt service
         private string returnVal1;
         private string returnVal2;
         private Boolean fail = false;
@@ -36,9 +36,9 @@ namespace LoginAndCreate
                 string fileToRead = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/members.xml");
 
                 XDocument doc = XDocument.Load(fileToRead);
-                XElement element = doc.Element("Members").Descendants("Member").Where(a => a.Element("Username").Value.Equals(username)).First();
+                var element = doc.Element("Members").Descendants("Member").Where(a => a.Element("Username").Value.Equals(username));
 
-                if (element == null)
+                if (element.Count() == 0 )
                 {
                     writeToFile(username, password);
                     returnVal1 = "Successfully created account";
@@ -76,7 +76,7 @@ namespace LoginAndCreate
         {
             if (!fail)
             {
-                string encPassword = EncDecRef.Encrypt(password);
+                string encPassword = EncryptDecrypt.Encrypt(password);//Call the dll library function
                 string fileToWrite = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/members.xml");
                 string[] userInfo = new String[2];
                 try
@@ -116,9 +116,9 @@ namespace LoginAndCreate
             var query = from o in file.Root.Elements("Member")
                         where (string)o.Element("Username") == user
                         select (string)o.Element("Password").Value;
-            string passToDecrypt = query.ToString();
+            string passToDecrypt = query.First(); //This is where an error happened, Changed from ToString() to First()
             //XElement element = file.Element("Members").Descendants("Member").Where(a => a.Element("Username").Value.Equals(user)).First();
-            string decPassword = EncDecRef.Decrypt(passToDecrypt);
+            string decPassword = EncryptDecrypt.Decrypt(passToDecrypt);//Call the dll library function
             if (pass == decPassword)
             {
                 returnVal2 = "Authenticated";//Can return a string or bool

@@ -41,6 +41,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EncryptDecryptLib">
+      <HintPath>..\..\..\Fall 2021\CSE445\Project5\EncryptDecryptLib\EncryptDecryptLib\bin\Debug\netstandard2.0\EncryptDecryptLib.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
