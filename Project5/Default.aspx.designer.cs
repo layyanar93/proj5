@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project5
-{
-
-
-    public partial class _Default
-    {
-
+namespace Project5 {
+    
+    
+    public partial class _Default {
+        
         /// <summary>
         /// Label1 control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-
+        
         /// <summary>
         /// usernameTextBox control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox usernameTextBox;
-
+        
         /// <summary>
         /// Label2 control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
-
+        
         /// <summary>
         /// passwordTextBox control.
         /// </summary>
@@ -49,7 +47,16 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox passwordTextBox;
-
+        
+        /// <summary>
+        /// rememberChk control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox rememberChk;
+        
         /// <summary>
         /// LoginButton control.
         /// </summary>
@@ -58,7 +65,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button LoginButton;
-
+        
         /// <summary>
         /// loginLabel control.
         /// </summary>
@@ -67,7 +74,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label loginLabel;
-
+        
         /// <summary>
         /// newUserTextBox control.
         /// </summary>
@@ -76,7 +83,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox newUserTextBox;
-
+        
         /// <summary>
         /// Label3 control.
         /// </summary>
@@ -85,7 +92,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
-
+        
         /// <summary>
         /// newPassTextBox control.
         /// </summary>
@@ -94,7 +101,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox newPassTextBox;
-
+        
         /// <summary>
         /// createUserButton control.
         /// </summary>
@@ -103,7 +110,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button createUserButton;
-
+        
         /// <summary>
         /// Image1 control.
         /// </summary>
@@ -112,7 +119,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image1;
-
+        
         /// <summary>
         /// showImageButton control.
         /// </summary>
@@ -121,7 +128,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button showImageButton;
-
+        
         /// <summary>
         /// TextBox1 control.
         /// </summary>
@@ -130,7 +137,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
-
+        
         /// <summary>
         /// buttonSubmitImage control.
         /// </summary>
@@ -139,7 +146,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button buttonSubmitImage;
-
+        
         /// <summary>
         /// imageVerLabel control.
         /// </summary>
@@ -148,7 +155,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label imageVerLabel;
-
+        
         /// <summary>
         /// createUserLabel control.
         /// </summary>

@@ -17,10 +17,11 @@
             <asp:TextBox ID="usernameTextBox" runat="server"></asp:TextBox>
             <br />
             <asp:Label ID="Label2" runat="server" Text="password:   "></asp:Label>
-            <asp:TextBox ID="passwordTextBox" runat="server"></asp:TextBox>
+            <asp:TextBox ID="passwordTextBox" runat="server" TextMode="Password"></asp:TextBox>
+            <br />
+            <asp:CheckBox ID="rememberChk" runat="server" OnCheckedChanged="chkRemember_CheckedChanged" Text="Remember Username" />
             <br />
             <asp:Button ID="LoginButton" runat="server" OnClick="LoginButton_Click" Text="Login" />
-            <br />
             <br />
             <asp:Label ID="loginLabel" runat="server" Text="Login Result"></asp:Label>
             <br />
@@ -34,7 +35,7 @@
             <asp:TextBox ID="newUserTextBox" runat="server"></asp:TextBox>
             <br />
             <asp:Label ID="Label3" runat="server" Text="Password:  "></asp:Label>
-            <asp:TextBox ID="newPassTextBox" runat="server"></asp:TextBox>
+            <asp:TextBox ID="newPassTextBox" runat="server" TextMode="Password"></asp:TextBox>
             <br />
             <asp:Button ID="createUserButton" runat="server" Text="Create User" OnClick="createUserButton_Click" />
             <br />
