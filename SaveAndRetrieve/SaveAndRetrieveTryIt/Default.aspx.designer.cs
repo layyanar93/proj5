@@ -42,6 +42,42 @@ namespace SaveAndRetrieveTryIt
         protected global::System.Web.UI.WebControls.Label printedLabel;
 
         /// <summary>
+        /// downloadLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label downloadLabel;
+
+        /// <summary>
+        /// SaveTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox SaveTextBox;
+
+        /// <summary>
+        /// downloadButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button downloadButton;
+
+        /// <summary>
+        /// downloadResultLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label downloadResultLabel;
+
+        /// <summary>
         /// unameToAddTextbox control.
         /// </summary>
         /// <remarks>

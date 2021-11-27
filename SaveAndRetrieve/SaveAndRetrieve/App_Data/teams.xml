@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Teams xmlns="http://www.public.asu.edu/~layyanar/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.public.asu.edu/~layyanar/ teams.xsd">
+  <Team>
+    <Name>Tigers</Name>
+    <College>Louisiana State University</College>
+    <Conference>SEC</Conference>
+    <Quarterback1 Height1="6ft 4in">
+      <Name1>
+        <First1>Myles</First1>
+        <Last1>Brennan</Last1>
+      </Name1>
+      <Number1>15</Number1>
+      <Qbr1>1</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6ft 1in">
+      <Name2>
+        <First2>Tavion</First2>
+        <Last2>Faulk</Last2>
+      </Name2>
+      <Number2>12</Number2>
+      <Qbr2>2</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>UCLA</Week1>
+      <Week2>McNeese</Week2>
+      <Week3>Central Michigan</Week3>
+    </Schedule>
+  </Team>
+  <Team>
+    <Name>Baylor Bears</Name>
+    <College>Baylor University</College>
+    <Conference>Big 12</Conference>
+    <Quarterback1 Height1="5ft 10in">
+      <Name1>
+        <First1>Brandon</First1>
+        <Last1>Bass</Last1>
+      </Name1>
+      <Number1>18</Number1>
+      <Qbr1>36</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6ft 1in">
+      <Name2>
+        <First2>Gerry</First2>
+        <Last2>Bohanon</Last2>
+      </Name2>
+      <Number2>11</Number2>
+      <Qbr2>74</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>TXST</Week1>
+      <Week2>TXSO</Week2>
+      <Week3>KU</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="5">
+    <Name>Florida Gators</Name>
+    <College>University</College>
+    <Conference>SEC</Conference>
+    <Quarterback1 Height1="5ft 11in">
+      <Name1>
+        <First1>John</First1>
+        <Last1>Brady</Last1>
+      </Name1>
+      <Number1>46</Number1>
+      <Qbr1>44</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6ft 0in">
+      <Name2>
+        <First2>Cornelius</First2>
+        <Last2>Barnes</Last2>
+      </Name2>
+      <Number2>36</Number2>
+      <Qbr2>48</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>Florida Atlantic</Week1>
+      <Week2>South Florida</Week2>
+      <Week3>Alabama</Week3>
+    </Schedule>
+  </Team>
+  <Team>
+    <Name>Longhorns</Name>
+    <College>University of Texas</College>
+    <Conference>Big 12</Conference>
+    <Quarterback1 Height1="5ft 11in">
+      <Name1>
+        <First1>Ben</First1>
+        <Last1>Ballard</Last1>
+      </Name1>
+      <Number1>16</Number1>
+      <Qbr1>66</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6ft 2in">
+      <Name2>
+        <First2>Hudson</First2>
+        <Last2>Card</Last2>
+      </Name2>
+      <Number2>1</Number2>
+      <Qbr2>53</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>UL</Week1>
+      <Week2>ARK</Week2>
+      <Week3>RICE</Week3>
+    </Schedule>
+  </Team>
+  <Team>
+    <Name>Wildcats</Name>
+    <College>University of Kentucky</College>
+    <Conference>SEC</Conference>
+    <Quarterback1 Height1="6ft 2in">
+      <Name1>
+        <First1>Beau</First1>
+        <Last1>Allen</Last1>
+      </Name1>
+      <Number1>11</Number1>
+      <Qbr1>133</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6ft 2in">
+      <Name2>
+        <First2>Patrick</First2>
+        <Last2>Delahunty</Last2>
+      </Name2>
+      <Number2>14</Number2>
+      <Qbr2>123</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>UL Monroe</Week1>
+      <Week2>Missouri</Week2>
+      <Week3>Chattanooga</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="3" xmlns="">
+    <Name>UCF Knights</Name>
+    <College>University of Central Florida</College>
+    <Conference>American</Conference>
+    <Quarterback1 Height1="5 ft 9 in">
+      <Name1>
+        <First1>Andrew</First1>
+        <Last1>Brito</Last1>
+      </Name1>
+      <Number1>13</Number1>
+      <Qbr1>71</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6 ft 0 in">
+      <Name2>
+        <First2>Dillon</First2>
+        <Last2>Gabriel</Last2>
+      </Name2>
+      <Number2>11</Number2>
+      <Qbr2>68</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>Boise State</Week1>
+      <Week2> Bethune-Cookman</Week2>
+      <Week3> Louisville</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="6" xmlns="">
+    <Name>Memphis Tigers</Name>
+    <College>University of Memphis</College>
+    <Conference>American</Conference>
+    <Quarterback1 Height1="6 ft 1 in">
+      <Name1>
+        <First1>Keilon</First1>
+        <Last1> Brown</Last1>
+      </Name1>
+      <Number1>12</Number1>
+      <Qbr1>135</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6 ft 0 in">
+      <Name2>
+        <First2>Grant</First2>
+        <Last2>Gunnell</Last2>
+      </Name2>
+      <Number2>7</Number2>
+      <Qbr2>97</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1> Nicholls</Week1>
+      <Week2> Arkansas State</Week2>
+      <Week3>Mississippi State</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="" xmlns="">
+    <Name>Oregib Ducks</Name>
+    <College>University of Oregon</College>
+    <Conference>Pac 12</Conference>
+    <Quarterback1 Height1="6 ft 2 in">
+      <Name1>
+        <First1>A.J.</First1>
+        <Last1> Abbott</Last1>
+      </Name1>
+      <Number1>12</Number1>
+      <Qbr1>139</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6 ft 4 in">
+      <Name2>
+        <First2>Robby</First2>
+        <Last2> Ashford</Last2>
+      </Name2>
+      <Number2>6</Number2>
+      <Qbr2>197</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>Fresno State</Week1>
+      <Week2>Ohio State</Week2>
+      <Week3>Stony Brook</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="2" xmlns="">
+    <Name>Virginia Cavaliers</Name>
+    <College>University of Virginia</College>
+    <Conference>ACC</Conference>
+    <Quarterback1 Height1="6 ft 3 in">
+      <Name1>
+        <First1>Iraken </First1>
+        <Last1>Armstead</Last1>
+      </Name1>
+      <Number1>11</Number1>
+      <Qbr1>150</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6 ft 2 in">
+      <Name2>
+        <First2>Brennan</First2>
+        <Last2> Armstrong</Last2>
+      </Name2>
+      <Number2>5</Number2>
+      <Qbr2>77</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>William &amp; Mary</Week1>
+      <Week2> Illinois</Week2>
+      <Week3>21 North Carolina</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="7" xmlns="">
+    <Name>Vanderbilt Commodores</Name>
+    <College>Vanderbilt University</College>
+    <Conference>SEC</Conference>
+    <Quarterback1 Height1="6 ft 2 in">
+      <Name1>
+        <First1>Blake</First1>
+        <Last1>Jarrett</Last1>
+      </Name1>
+      <Number1>39</Number1>
+      <Qbr1>154</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6 ft 0 in">
+      <Name2>
+        <First2>Wilson</First2>
+        <Last2>Long</Last2>
+      </Name2>
+      <Number2>38</Number2>
+      <Qbr2>75</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>East Tennessee State</Week1>
+      <Week2>  Colorado State</Week2>
+      <Week3> Stanford</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="5" xmlns="">
+    <Name>Akron Zips</Name>
+    <College>University of Akron</College>
+    <Conference>MAC</Conference>
+    <Quarterback1 Height1="6 ft 2 in">
+      <Name1>
+        <First1>Calvin </First1>
+        <Last1>Cloud</Last1>
+      </Name1>
+      <Number1>15</Number1>
+      <Qbr1>154</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6 ft 3 in">
+      <Name2>
+        <First2>Zach</First2>
+        <Last2>Gibson</Last2>
+      </Name2>
+      <Number2>5</Number2>
+      <Qbr2>73</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>Auburn</Week1>
+      <Week2> Temple</Week2>
+      <Week3> Bryant</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="4" xmlns="">
+    <Name>Mustangs</Name>
+    <College> Southern Methodist University</College>
+    <Conference>American</Conference>
+    <Quarterback1 Height1="6 ft 3 in">
+      <Name1>
+        <First1>Derek </First1>
+        <Last1>Green</Last1>
+      </Name1>
+      <Number1>12</Number1>
+      <Qbr1>132</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6 ft 2 in">
+      <Name2>
+        <First2>Tanner</First2>
+        <Last2>Mordecai</Last2>
+      </Name2>
+      <Number2>8</Number2>
+      <Qbr2>71</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>Abilene Christian</Week1>
+      <Week2>North Texas</Week2>
+      <Week3> Louisiana Tech</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="" xmlns="">
+    <Name>Clemson Tigers</Name>
+    <College>Clemson University</College>
+    <Conference>ACC</Conference>
+    <Quarterback1 Height1="6 ft 3 in">
+      <Name1>
+        <First1>Taisun </First1>
+        <Last1>Phommachanh</Last1>
+      </Name1>
+      <Number1>7</Number1>
+      <Qbr1>67</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6 ft 2 in">
+      <Name2>
+        <First2>Hunter </First2>
+        <Last2>Helms</Last2>
+      </Name2>
+      <Number2>18</Number2>
+      <Qbr2>150</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>Georgia </Week1>
+      <Week2> South Carolina State</Week2>
+      <Week3>Georgia Tech</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="10" xmlns="">
+    <Name> Kansas Jayhawks</Name>
+    <College> University of Kansas</College>
+    <Conference>Big 12</Conference>
+    <Quarterback1 Height1="6 ft 3 in">
+      <Name1>
+        <First1>Jason</First1>
+        <Last1>Bean</Last1>
+      </Name1>
+      <Number1>17</Number1>
+      <Qbr1>40</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6 ft 0 in">
+      <Name2>
+        <First2>Jalon</First2>
+        <Last2> Daniels</Last2>
+      </Name2>
+      <Number2>6</Number2>
+      <Qbr2>43</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1> South Dakota</Week1>
+      <Week2>Coastal Carolina</Week2>
+      <Week3> Baylor</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="5" xmlns="">
+    <Name>Maryland Terrapins</Name>
+    <College>University of Maryland</College>
+    <Conference>Big 10</Conference>
+    <Quarterback1 Height1="6 ft 3 in">
+      <Name1>
+        <First1>Ryan </First1>
+        <Last1>Duell</Last1>
+      </Name1>
+      <Number1>14</Number1>
+      <Qbr1>48</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6 ft 3 in">
+      <Name2>
+        <First2>David </First2>
+        <Last2>Foust</Last2>
+      </Name2>
+      <Number2>12</Number2>
+      <Qbr2>44</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>West Virginia</Week1>
+      <Week2> Howard</Week2>
+      <Week3>Illinois</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="3" xmlns="">
+    <Name>Auburn Tigers</Name>
+    <College>Auburn University</College>
+    <Conference>SEC</Conference>
+    <Quarterback1 Height1="5 ft 10 in">
+      <Name1>
+        <First1>Dematrius </First1>
+        <Last1>Davis</Last1>
+      </Name1>
+      <Number1>18</Number1>
+      <Qbr1>149</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6 ft 7 in">
+      <Name2>
+        <First2>TJ</First2>
+        <Last2>Finley</Last2>
+      </Name2>
+      <Number2>1</Number2>
+      <Qbr2>64</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>Akron</Week1>
+      <Week2> Alabama State</Week2>
+      <Week3> Penn State</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="" xmlns="">
+    <Name>Troy Trojans</Name>
+    <College>Troy University</College>
+    <Conference>Sun Belt</Conference>
+    <Quarterback1 Height1="6 ft 3 in">
+      <Name1>
+        <First1>Will</First1>
+        <Last1>Carn</Last1>
+      </Name1>
+      <Number1>19</Number1>
+      <Qbr1>149</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6 ft 1 in">
+      <Name2>
+        <First2>Quayde</First2>
+        <Last2>Hawkins</Last2>
+      </Name2>
+      <Number2>9</Number2>
+      <Qbr2>64</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>Southern</Week1>
+      <Week2>Liberty</Week2>
+      <Week3>Southern Miss</Week3>
+    </Schedule>
+  </Team>
+  <Team Rank="7" xmlns="">
+    <Name>Indiana Hoosiers</Name>
+    <College>Indiana University Bloomington</College>
+    <Conference>Big 10</Conference>
+    <Quarterback1 Height1="6ft 3in">
+      <Name1>
+        <First1>Grant</First1>
+        <Last1>Gremel</Last1>
+      </Name1>
+      <Number1>16</Number1>
+      <Qbr1>132</Qbr1>
+    </Quarterback1>
+    <Quarterback2 Height2="6ft 3in">
+      <Name2>
+        <First2>Will</First2>
+        <Last2>Jontz</Last2>
+      </Name2>
+      <Number2>25</Number2>
+      <Qbr2>123</Qbr2>
+    </Quarterback2>
+    <Schedule>
+      <Week1>Iowa</Week1>
+      <Week2> Idaho</Week2>
+      <Week3>Cincinnati</Week3>
+    </Schedule>
+  </Team>
+</Teams>

@@ -9,6 +9,7 @@ using System.ServiceModel.Web;
 using System.Text;
 using System.Xml.Linq;
 using System.Xml;
+using System.Net;
 
 namespace SaveAndRetrieve
 {
@@ -17,6 +18,7 @@ namespace SaveAndRetrieve
     public class Service1 : IService1
     {
         public string returnString;
+        public string toDownload;
         public string putStringToFile (string username, string value)
         {
             try
@@ -46,9 +48,33 @@ namespace SaveAndRetrieve
             {
                 toPrint = toPrint + u.Value;
             }
-
+            toDownload = toPrint;
             returnString = toPrint;
             return returnString;
         }
+
+        //public string downloadRecipes(string username)
+        //{   
+        //    //write the user's recipes to a temporary file 
+        //    string fileToSave = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/toSave.xml");
+        //    using (var fs  = File.Open(fileToSave, FileMode.OpenOrCreate, FileAccess.ReadWrite))
+        //    {
+        //        using (var sw = new StreamWriter(fs))
+        //        {
+        //            sw.WriteLine(toDownload);
+        //        }
+        //    }
+        //    // download the file
+        //    try
+        //    {
+        //        using (var client = new WebClient())
+        //        {
+        //            client.DownloadFile(fileToSave, DESTINATION LOCATION HERE);
+        //            returnString = "successfully downloaded";
+        //        }
+        //    }
+        //    catch (Exception ecx) { returnString = ecx.Message; }
+        //    return returnString;
+        //}
     }
-}
+ }

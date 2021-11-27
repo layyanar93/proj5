@@ -20,5 +20,8 @@ namespace SaveAndRetrieve
 
         [OperationContract]
         string getStringFromFile(string username);
+
+        //[OperationContract]
+        //string downloadRecipes(string username);
     }
 }

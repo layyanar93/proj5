@@ -16,22 +16,22 @@ namespace Project5.loginServiceReference {
     public interface IService1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/createUser", ReplyAction="http://tempuri.org/IService1/createUserResponse")]
-        string createUser(string username, string password);
+        string createUser(string username, string password, string type);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/createUser", ReplyAction="http://tempuri.org/IService1/createUserResponse")]
-        System.Threading.Tasks.Task<string> createUserAsync(string username, string password);
+        System.Threading.Tasks.Task<string> createUserAsync(string username, string password, string type);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/userLogin", ReplyAction="http://tempuri.org/IService1/userLoginResponse")]
-        string userLogin(string username, string password);
+        string userLogin(string username, string password, string type);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/userLogin", ReplyAction="http://tempuri.org/IService1/userLoginResponse")]
-        System.Threading.Tasks.Task<string> userLoginAsync(string username, string password);
+        System.Threading.Tasks.Task<string> userLoginAsync(string username, string password, string type);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AuthUser", ReplyAction="http://tempuri.org/IService1/AuthUserResponse")]
-        string AuthUser(string authString);
+        string AuthUser(string authString, string type);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AuthUser", ReplyAction="http://tempuri.org/IService1/AuthUserResponse")]
-        System.Threading.Tasks.Task<string> AuthUserAsync(string authString);
+        System.Threading.Tasks.Task<string> AuthUserAsync(string authString, string type);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -61,28 +61,28 @@ namespace Project5.loginServiceReference {
                 base(binding, remoteAddress) {
         }
         
-        public string createUser(string username, string password) {
-            return base.Channel.createUser(username, password);
+        public string createUser(string username, string password, string type) {
+            return base.Channel.createUser(username, password, type);
         }
         
-        public System.Threading.Tasks.Task<string> createUserAsync(string username, string password) {
-            return base.Channel.createUserAsync(username, password);
+        public System.Threading.Tasks.Task<string> createUserAsync(string username, string password, string type) {
+            return base.Channel.createUserAsync(username, password, type);
         }
         
-        public string userLogin(string username, string password) {
-            return base.Channel.userLogin(username, password);
+        public string userLogin(string username, string password, string type) {
+            return base.Channel.userLogin(username, password, type);
         }
         
-        public System.Threading.Tasks.Task<string> userLoginAsync(string username, string password) {
-            return base.Channel.userLoginAsync(username, password);
+        public System.Threading.Tasks.Task<string> userLoginAsync(string username, string password, string type) {
+            return base.Channel.userLoginAsync(username, password, type);
         }
         
-        public string AuthUser(string authString) {
-            return base.Channel.AuthUser(authString);
+        public string AuthUser(string authString, string type) {
+            return base.Channel.AuthUser(authString, type);
         }
         
-        public System.Threading.Tasks.Task<string> AuthUserAsync(string authString) {
-            return base.Channel.AuthUserAsync(authString);
+        public System.Threading.Tasks.Task<string> AuthUserAsync(string authString, string type) {
+            return base.Channel.AuthUserAsync(authString, type);
         }
     }
 }

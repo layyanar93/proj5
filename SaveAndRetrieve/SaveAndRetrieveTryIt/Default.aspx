@@ -10,7 +10,15 @@
         <br />
         <asp:Label ID="printedLabel" runat="server" Text="Label"></asp:Label>
     </div>
-
+    <formView>
+        <asp:Label ID="downloadLabel" runat="server" Text="download file:"></asp:Label>
+        &nbsp;<br />
+    Enter path to save file:
+    <asp:TextBox ID="SaveTextBox" runat="server"></asp:TextBox>
+    <br />
+        <asp:Button ID="downloadButton" runat="server" OnClick="downloadButton_Click" Text="download" />
+        <asp:Label ID="downloadResultLabel" runat="server" Text="downloadResult"></asp:Label>
+    </formView>
     <div class="row">
         <div class="col-md-4">
             <h2>&nbsp;</h2>
@@ -32,6 +40,10 @@
             <p>
                 <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
             </p>
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
         </div>
     </div>
 

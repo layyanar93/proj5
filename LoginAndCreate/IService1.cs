@@ -15,13 +15,13 @@ namespace LoginAndCreate
     {
 
         [OperationContract]
-        string createUser(string username, string password);
+        string createUser(string username, string password, string type);
 
         [OperationContract]
-        string userLogin(string username, string password);
+        string userLogin(string username, string password, string type);
 
         [OperationContract]
-        string AuthUser(string authString);
+        string AuthUser(string authString, string type);
 
     }
 

@@ -19,6 +19,8 @@ namespace LoginAndCreate
     {
         string returnString = "";
         bool foundUser = false;
+        string fileToRead = "";
+        string fileToWrite = "";
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);
@@ -27,20 +29,27 @@ namespace LoginAndCreate
         private string returnVal2;
         private Boolean fail = false;
 
-        public string createUser(string username, string password)
+        public string createUser(string username, string password, string type)
         {
             if (username.Length >= 5 && password.Length >= 5 && !username.Equals(password))
             {
 
                 //verify username isn't already taken
-                string fileToRead = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/members.xml");
+                if (type == "admin")
+                {
+                    fileToRead = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/staff.xml");
+                }
+                else if (type == "user")
+                {
+                    fileToRead = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/members.xml");
+                }
 
                 XDocument doc = XDocument.Load(fileToRead);
                 var element = doc.Element("Members").Descendants("Member").Where(a => a.Element("Username").Value.Equals(username));
 
                 if (element.Count() == 0 )
                 {
-                    writeToFile(username, password);
+                    writeToFile(username, password, type);
                     returnVal1 = "Successfully created account";
                 }
                 else
@@ -57,12 +66,12 @@ namespace LoginAndCreate
             return returnVal1;
         }
 
-        public string userLogin(string username, string password)
+        public string userLogin(string username, string password, string type)
         {
             if (username != null && password != null)
             {
                 string forAuth = username + "." + password;
-                AuthUser(forAuth);
+                AuthUser(forAuth, type);
             }
             else
             {
@@ -72,24 +81,42 @@ namespace LoginAndCreate
         }
 
         // TODO: add redirect code in here
-        public void writeToFile(string username, string password)
+        public void writeToFile(string username, string password, string type)
         {
             if (!fail)
             {
                 string encPassword = EncryptDecrypt.Encrypt(password);//Call the dll library function
-                string fileToWrite = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/members.xml");
                 string[] userInfo = new String[2];
-                try
+                if (type == "admin")
                 {
-                    XElement file = XElement.Load(fileToWrite);
-                    file.Add(new XElement("Member",
-                        new XElement("Username", username),
-                        new XElement("Password", encPassword)));
+                    fileToWrite = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/staff.xml");
+                    try
+                    {
+                        XElement file = XElement.Load(fileToWrite);
+                        file.Add(new XElement("Staff",
+                            new XElement("Username", username),
+                            new XElement("Password", encPassword)));
 
-                    file.Save(fileToWrite);
-                    returnString = "User has been added successfully";
+                        file.Save(fileToWrite);
+                        returnString = "Staff has been added successfully";
+                    }
+                    catch (Exception ecx) { returnString = ecx.Message; }
                 }
-                catch (Exception ecx) { returnString = ecx.Message; }
+                else if (type == "user")
+                {
+                    fileToWrite = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/members.xml");
+                    try
+                    {
+                        XElement file = XElement.Load(fileToWrite);
+                        file.Add(new XElement("Member",
+                            new XElement("Username", username),
+                            new XElement("Password", encPassword)));
+
+                        file.Save(fileToWrite);
+                        returnString = "User has been added successfully";
+                    }
+                    catch (Exception ecx) { returnString = ecx.Message; }
+                }
             }
             else
             {
@@ -98,7 +125,7 @@ namespace LoginAndCreate
         }
 
 
-        public string AuthUser(string authString) //authString format is user.password
+        public string AuthUser(string authString, string type) //authString format is user.password
         {
             string fLocation = Path.Combine(HttpRuntime.AppDomainAppPath,
                 @"App_Data"); // From server root to current
@@ -106,19 +133,38 @@ namespace LoginAndCreate
             string user = userWPass[0];
             string pass = userWPass[1].Trim();
             returnVal2 = "Not Authenticated";
+            string decPassword = "";
             // string returnStr = "";
-            fLocation = Path.Combine(fLocation, "members.xml"); // From current to App_Data
-            XDocument file = XDocument.Load(fLocation);
-            if (!File.Exists(fLocation))
+            if (type == "admin")
             {
-                returnVal2 = "cannot find file to authenticate";
+                fLocation = Path.Combine(fLocation, "staff.xml"); // From current to App_Data
+                XDocument file = XDocument.Load(fLocation);
+                if (!File.Exists(fLocation))
+                {
+                    returnVal2 = "cannot find file to authenticate";
+                }
+                var query = from o in file.Root.Elements("Staff")
+                            where (string)o.Element("Username") == user
+                            select (string)o.Element("Password").Value;
+                string passToDecrypt = query.First(); //This is where an error happened, Changed from ToString() to First()
+                                                      //XElement element = file.Element("Members").Descendants("Member").Where(a => a.Element("Username").Value.Equals(user)).First();
+                decPassword = EncryptDecrypt.Decrypt(passToDecrypt);//Call the dll library function
             }
-            var query = from o in file.Root.Elements("Member")
-                        where (string)o.Element("Username") == user
-                        select (string)o.Element("Password").Value;
-            string passToDecrypt = query.First(); //This is where an error happened, Changed from ToString() to First()
-            //XElement element = file.Element("Members").Descendants("Member").Where(a => a.Element("Username").Value.Equals(user)).First();
-            string decPassword = EncryptDecrypt.Decrypt(passToDecrypt);//Call the dll library function
+            else if (type == "user")
+            {
+                fLocation = Path.Combine(fLocation, "members.xml"); // From current to App_Data
+                XDocument file = XDocument.Load(fLocation);
+                if (!File.Exists(fLocation))
+                {
+                    returnVal2 = "cannot find file to authenticate";
+                }
+                var query = from o in file.Root.Elements("Member")
+                            where (string)o.Element("Username") == user
+                            select (string)o.Element("Password").Value;
+                string passToDecrypt = query.First(); //This is where an error happened, Changed from ToString() to First()
+                                                      
+                decPassword = EncryptDecrypt.Decrypt(passToDecrypt);//Call the dll library function
+            }
             if (pass == decPassword)
             {
                 returnVal2 = "Authenticated";//Can return a string or bool
