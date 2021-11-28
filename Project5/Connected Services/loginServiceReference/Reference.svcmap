@@ -19,12 +19,12 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:50181/Service1.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://webstrar64.fulton.asu.edu/Page0/Service1.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="67e8f5b9-dcac-4f0f-8f5e-0e3a224d61ce" SourceId="1" SourceUrl="http://localhost:50181/Service1.svc?wsdl" />
-    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="67702c5b-e0a8-4211-baf1-4b026bd83c0b" SourceId="1" SourceUrl="http://localhost:50181/Service1.svc?xsd=xsd0" />
-    <MetadataFile FileName="Service11.xsd" MetadataType="Schema" ID="f8f2aa2e-5f3a-4dc8-9fb6-c9c6559f57b8" SourceId="1" SourceUrl="http://localhost:50181/Service1.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service12.xsd" MetadataType="Schema" ID="34ed0a00-65f1-4040-8460-c5b06a77d886" SourceId="1" SourceUrl="http://webstrar64.fulton.asu.edu/Page0/Service1.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service121.xsd" MetadataType="Schema" ID="3974595c-c92c-40eb-bd8d-380888a4dfd7" SourceId="1" SourceUrl="http://webstrar64.fulton.asu.edu/Page0/Service1.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service11.wsdl" MetadataType="Wsdl" ID="d9c514a1-4451-4dd2-80b8-ca2bc145c99e" SourceId="1" SourceUrl="http://webstrar64.fulton.asu.edu/Page0/Service1.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
