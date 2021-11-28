@@ -15,18 +15,17 @@ namespace Project5
         {
             Response.Clear();
             imageVerServiceReference.ServiceClient fromService = new imageVerServiceReference.ServiceClient();
-            string myStr, length;
-            if (Session["generatedString"] == null)
+            int anwser;
+            if (Session["generatedAnwser"] == null)
             {
-                length = "6";
-                myStr = fromService.GetVerifierString(length);
-                Session["generatedString"] = myStr;
+                anwser = fromService.RandomNumber();
+                Session["generatedAnwser"] = anwser;
             }
             else
             {
-                myStr = Session["generatedString"].ToString();
+                anwser = (int)Session["generatedAnwser"];
             }
-            Stream myStream = fromService.GetImage(myStr);
+            Stream myStream = fromService.GetImage(anwser);
             System.Drawing.Image myImage = System.Drawing.Image.FromStream(myStream);
             Response.ContentType = "image/jpeg";
             myImage.Save(Response.OutputStream, ImageFormat.Jpeg);

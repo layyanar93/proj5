@@ -15,17 +15,17 @@ namespace Project5.imageVerServiceReference {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="imageVerServiceReference.IService")]
     public interface IService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetVerifierString", ReplyAction="http://tempuri.org/IService/GetVerifierStringResponse")]
-        string GetVerifierString(string myLength);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/RandomNumber", ReplyAction="http://tempuri.org/IService/RandomNumberResponse")]
+        int RandomNumber();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetVerifierString", ReplyAction="http://tempuri.org/IService/GetVerifierStringResponse")]
-        System.Threading.Tasks.Task<string> GetVerifierStringAsync(string myLength);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetImage", ReplyAction="http://tempuri.org/IService/GetImageResponse")]
-        System.IO.Stream GetImage(string myString);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/RandomNumber", ReplyAction="http://tempuri.org/IService/RandomNumberResponse")]
+        System.Threading.Tasks.Task<int> RandomNumberAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetImage", ReplyAction="http://tempuri.org/IService/GetImageResponse")]
-        System.Threading.Tasks.Task<System.IO.Stream> GetImageAsync(string myString);
+        System.IO.Stream GetImage(int anwser);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetImage", ReplyAction="http://tempuri.org/IService/GetImageResponse")]
+        System.Threading.Tasks.Task<System.IO.Stream> GetImageAsync(int anwser);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,20 +55,20 @@ namespace Project5.imageVerServiceReference {
                 base(binding, remoteAddress) {
         }
         
-        public string GetVerifierString(string myLength) {
-            return base.Channel.GetVerifierString(myLength);
+        public int RandomNumber() {
+            return base.Channel.RandomNumber();
         }
         
-        public System.Threading.Tasks.Task<string> GetVerifierStringAsync(string myLength) {
-            return base.Channel.GetVerifierStringAsync(myLength);
+        public System.Threading.Tasks.Task<int> RandomNumberAsync() {
+            return base.Channel.RandomNumberAsync();
         }
         
-        public System.IO.Stream GetImage(string myString) {
-            return base.Channel.GetImage(myString);
+        public System.IO.Stream GetImage(int anwser) {
+            return base.Channel.GetImage(anwser);
         }
         
-        public System.Threading.Tasks.Task<System.IO.Stream> GetImageAsync(string myString) {
-            return base.Channel.GetImageAsync(myString);
+        public System.Threading.Tasks.Task<System.IO.Stream> GetImageAsync(int anwser) {
+            return base.Channel.GetImageAsync(anwser);
         }
     }
 }

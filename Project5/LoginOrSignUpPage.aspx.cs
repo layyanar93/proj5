@@ -12,12 +12,11 @@ namespace Project5
         void GenerateImage()
         {
             imageVerServiceReference.ServiceClient fromService = new imageVerServiceReference.ServiceClient();
-            string length = "6";
-            Session["userLength"] = length;
-            string myStr = fromService.GetVerifierString(length);
-            Session["generatedString"] = myStr;
+            int anwser = fromService.RandomNumber();
+            Session["generatedAnwser"] = anwser;
             showImageButton.Text = "Show another image";
             Image1.Visible = true;
+            //showImageButton.Text = ((int)Session["generatedAnwser"]).ToString();
 
         }
         protected void Page_Load(object sender, EventArgs e)
@@ -113,7 +112,8 @@ namespace Project5
 
         protected void buttonSubmitImage_Click(object sender, EventArgs e)
         {
-            if (Session["generatedString"].Equals(TextBox1.Text))
+
+            if (((int)Session["generatedAnwser"]).ToString() == TextBox1.Text)
             {
                 imageVerLabel.Text = "The code you entered is correct.";
                 Session["passed"] = true;
@@ -121,7 +121,7 @@ namespace Project5
             }
             else
             {
-                imageVerLabel.Text = "Incorrect string entered";
+                imageVerLabel.Text = "The number you entered is incorrect. Try again.";
                 GenerateImage();
             }
         }

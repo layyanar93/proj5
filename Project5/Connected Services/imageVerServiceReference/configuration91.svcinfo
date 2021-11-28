@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="zE/3NlXvHds55lGbdvgh5stKH2Qs3173EB4ajSV/4CA=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="b8eGLOdAWFX+0XDNtJePhDCC9YA=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IService">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IService" contract="imageVerServiceReference.IService" bindingType="basicHttpBinding" address="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc" bindingConfiguration="BasicHttpBinding_IService">
+    <endpoint name="BasicHttpBinding_IService" contract="imageVerServiceReference.IService" bindingType="basicHttpBinding" address="http://webstrar64.fulton.asu.edu/Page4/Service.svc" bindingConfiguration="BasicHttpBinding_IService">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc</serializedValue>
+          <serializedValue>http://webstrar64.fulton.asu.edu/Page4/Service.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

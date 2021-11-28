@@ -19,14 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://webstrar64.fulton.asu.edu/Page4/Service.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="23099971-8710-4f3e-a6a6-dde516b2713b" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?xsd=xsd2" />
-    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="4685fb45-6455-4def-9a1f-912161daf04b" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?wsdl" />
-    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="209c7ec6-c645-4ea8-9119-f7ca8d57d663" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?xsd=xsd1" />
-    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="5f02cf24-3af4-4010-8347-193ec217b9a8" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?disco" />
-    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="1f647bb8-88bb-440a-912c-404fce8ba6c5" SourceId="1" SourceUrl="http://neptune.fulton.ad.asu.edu/WSRepository/Services/ImageVerifierSvc/Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="f266b611-5f5a-46eb-9cae-8da2f801658c" SourceId="1" SourceUrl="http://webstrar64.fulton.asu.edu/Page4/Service.svc?wsdl" />
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="773a2622-b39f-48b8-b862-1189a5d828ce" SourceId="1" SourceUrl="http://webstrar64.fulton.asu.edu/Page4/Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="07b6ba3f-2526-483c-ba31-6ba8ee531e85" SourceId="1" SourceUrl="http://webstrar64.fulton.asu.edu/Page4/Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="3cf191f9-a6f3-405c-ad78-18a6821944f4" SourceId="1" SourceUrl="http://webstrar64.fulton.asu.edu/Page4/Service.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
