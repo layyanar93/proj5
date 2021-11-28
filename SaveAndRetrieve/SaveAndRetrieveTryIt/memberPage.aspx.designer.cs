@@ -51,7 +51,7 @@ namespace SaveAndRetrieveTryIt
         protected global::System.Web.UI.WebControls.Button SaveButton;
 
         /// <summary>
-        /// Label3 control.
+        /// saveLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.

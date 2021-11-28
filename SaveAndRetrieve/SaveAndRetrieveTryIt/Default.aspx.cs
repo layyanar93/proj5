@@ -46,5 +46,10 @@ namespace SaveAndRetrieveTryIt
                 }
             }
         }
+
+        protected void memberButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("memberPage.aspx");
+        }
     }
 }

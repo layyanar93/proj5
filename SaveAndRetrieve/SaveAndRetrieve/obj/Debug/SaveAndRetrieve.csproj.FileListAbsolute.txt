@@ -18,3 +18,4 @@ C:\Users\Aravind PC\source\repos\proj5\SaveAndRetrieve\SaveAndRetrieve\bin\Stora
 C:\Users\Aravind PC\source\repos\proj5\SaveAndRetrieve\SaveAndRetrieve\obj\Debug\SaveAndRetrieve.csproj.CoreCompileInputs.cache
 C:\Users\Aravind PC\source\repos\proj5\SaveAndRetrieve\SaveAndRetrieve\obj\Debug\StorageTest.dll
 C:\Users\Aravind PC\source\repos\proj5\SaveAndRetrieve\SaveAndRetrieve\obj\Debug\StorageTest.pdb
+C:\Users\Aravind PC\source\repos\proj5\SaveAndRetrieve\SaveAndRetrieve\obj\Debug\SaveAndRetrieve.csproj.AssemblyReference.cache

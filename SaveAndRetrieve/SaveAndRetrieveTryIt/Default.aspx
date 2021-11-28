@@ -28,7 +28,9 @@
             </p>
         </div>
         <div class="col-md-4">
-            <h2>&nbsp;</h2>
+            <h2>
+                <asp:Button ID="memberButton" runat="server" OnClick="memberButton_Click" Text="member page" />
+            </h2>
             <p>
                 Enter text to save here:
             </p>
@@ -37,6 +39,10 @@
 &nbsp;<asp:Button ID="saveToXmlButton" runat="server" OnClick="saveToXmlButton_Click" Text="Save" />
                 <asp:Label ID="resultLabel" runat="server" Text="Label"></asp:Label>
             </p>
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
             <p>
                 <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
             </p>
