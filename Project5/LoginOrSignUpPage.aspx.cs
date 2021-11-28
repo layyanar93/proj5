@@ -32,36 +32,55 @@ namespace Project5
             if (showImageButton.Text != "Show another image")
             {
                 GenerateImage();
+                Session["passed"] = null;
             }
+            if(Session["passed"] != null && (bool)Session["passed"] == true)
+            {
+                newPassTextBox.Enabled = true;
+            }
+            else
+            {
+                newPassTextBox.Enabled = false;
+            }
+        }
+
+        void Login(string username, string password)
+        {
+            string type = "user";
+            loginServiceReference.Service1Client myClient = new loginServiceReference.Service1Client();
+            string resultText = myClient.userLogin(username, password, type);
+            loginLabel.Text = resultText;
         }
 
         protected void LoginButton_Click(object sender, EventArgs e)
         {
             string username = usernameTextBox.Text;
             string password = passwordTextBox.Text;
-            string type = "user";
             if (username == "" || password == "")
             {
                 loginLabel.Text = "Please enter a username and password";
                 return;
             }
-            loginServiceReference.Service1Client myClient = new loginServiceReference.Service1Client();
-            string resultText = myClient.userLogin(username, password, type);
-            loginLabel.Text = resultText;
+            Login(username, password);
             HttpCookie myCookies = Request.Cookies["recipieApp"];
-            if (rememberChk.Checked == true && loginLabel.Text == "Authenticated")
+            if (loginLabel.Text == "Authenticated")
             {
-                myCookies = new HttpCookie("recipieApp");
-                myCookies["Name"] = usernameTextBox.Text;
-                myCookies.Expires = DateTime.Now.AddMonths(6);
-                Response.Cookies.Add(myCookies);
+                if (rememberChk.Checked == true)
+                {
+                    myCookies = new HttpCookie("recipieApp");
+                    myCookies["Name"] = usernameTextBox.Text;
+                    myCookies.Expires = DateTime.Now.AddMonths(6);
+                    Response.Cookies.Add(myCookies);
+                }
+                else if (rememberChk.Checked == false && myCookies["Name"] != "")
+                {
+                    myCookies = new HttpCookie("recipieApp");
+                    myCookies["Name"] = "";
+                    Response.Cookies.Add(myCookies);
+                }
+                Session["username"] = username;
+                //loginLabel.Text = (String)Session["username"];
                 Response.Redirect("SaveAndRetrieve.aspx");
-            }
-            else if (rememberChk.Checked == false && myCookies["Name"] != "" && loginLabel.Text == "Authenticated")
-            {
-                myCookies = new HttpCookie("recipieApp");
-                myCookies["Name"] = "";
-                Response.Cookies.Add(myCookies);
             }
         }
 
@@ -69,10 +88,22 @@ namespace Project5
         {
             string newUsername = newUserTextBox.Text;
             string newPassword = newPassTextBox.Text;
+            if (newUsername == "" || newPassword == "")
+            {
+                loginLabel.Text = "Please enter a username and password";
+                return;
+            }
             string type = "user";
             loginServiceReference.Service1Client myClient = new loginServiceReference.Service1Client();
             string createUserResult = myClient.createUser(newUsername, newPassword, type);
             createUserLabel.Text = createUserResult;
+            Login(newUsername, newPassword);
+            if (loginLabel.Text == "Authenticated")
+            {
+                Session["username"] = newUsername;
+                Response.Redirect("SaveAndRetrieve.aspx");
+            }
+
         }
 
         protected void showImageButton_Click(object sender, EventArgs e)
@@ -85,6 +116,8 @@ namespace Project5
             if (Session["generatedString"].Equals(TextBox1.Text))
             {
                 imageVerLabel.Text = "The code you entered is correct.";
+                Session["passed"] = true;
+                newPassTextBox.Enabled = true;
             }
             else
             {
@@ -99,7 +132,7 @@ namespace Project5
 
         protected void backToDefButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("LoginOrSignUpPage.aspx");
+            Response.Redirect("Default.aspx");
         }
     }
 }
