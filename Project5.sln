@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginTryIt", "Project5\Logi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginAndCreate", "LoginAndCreate\LoginAndCreate.csproj", "{C596B23B-5C6A-410E-BC68-B52485EFB5CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptDecrypt", "..\EncryptDecrypt\EncryptDecrypt\EncryptDecrypt\EncryptDecrypt.csproj", "{4192E114-7E4A-4B23-99D9-ECC92D2456D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{C596B23B-5C6A-410E-BC68-B52485EFB5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C596B23B-5C6A-410E-BC68-B52485EFB5CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C596B23B-5C6A-410E-BC68-B52485EFB5CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4192E114-7E4A-4B23-99D9-ECC92D2456D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4192E114-7E4A-4B23-99D9-ECC92D2456D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4192E114-7E4A-4B23-99D9-ECC92D2456D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4192E114-7E4A-4B23-99D9-ECC92D2456D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

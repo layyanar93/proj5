@@ -22,8 +22,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="saveLabel" runat="server"></asp:Label>
                 </p>
-                <p aria-orientation="vertical" aria-selected="false" draggable="true" style="width: 73px">
-                    OR </p>
+                <p>
+                    &nbsp;</p>
                 <p>
                     Retrieve your recipes:
                 </p>
@@ -32,7 +32,6 @@
                 <asp:Label ID="printLabel" runat="server" Text="Print Result"></asp:Label>
                 <br />
                 <br />
-                OR <br />
                 <br />
                 Download your recipes:
                 <br />
@@ -40,6 +39,15 @@
                 <asp:TextBox ID="downloadTextBox" runat="server" Width="360px">e.g.  C:\Users\John\source\examples\Recipes\</asp:TextBox>
                 <br />
                 <asp:Button ID="downloadButton" runat="server" OnClick="downloadButton_Click" Text="Download" />
+                <br />
+                <br />
+                Search the web for a new recipe:
+                <br />
+                Type key words here:
+                <asp:TextBox ID="keywordsTextBox" runat="server" Width="388px"></asp:TextBox>
+                <asp:Button ID="searchButton" runat="server" Text="Search" />
+                <asp:BulletedList ID="BulletedList1" runat="server" DisplayMode="HyperLink">
+</asp:BulletedList>
     </form>
 </body>
 </html>

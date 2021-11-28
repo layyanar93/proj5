@@ -124,6 +124,23 @@ namespace LoginAndCreate
             }
         }
 
+        public string removeMember(string username)
+        {
+            //read in the members.xml file which has the username and passwords
+            string fileToDel = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/members.xml");
+            var xml = File.ReadAllText(fileToDel);
+
+            try
+            {
+                //parse through xml and find the username which was passed in, then remove that element
+                XDocument doc = XDocument.Parse(xml);
+                doc.Descendants().Elements("Member").Where(x => x.Element("Username")?.Value == username).Remove();
+                returnString = "Successfully removed member.";
+            }
+            catch (Exception ecx) { returnString = ecx.Message; }
+
+            return returnString;
+        }
 
         public string AuthUser(string authString, string type) //authString format is user.password
         {

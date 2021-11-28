@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f2d0100d-1b64-488e-994e-3db3ae5fda2c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f0bd1096-48a0-431c-be1b-290bc402657e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,12 +19,12 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://webstrar64.fulton.asu.edu/Page0/Service1.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:50181/Service1.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service12.xsd" MetadataType="Schema" ID="34ed0a00-65f1-4040-8460-c5b06a77d886" SourceId="1" SourceUrl="http://webstrar64.fulton.asu.edu/Page0/Service1.svc?xsd=xsd1" />
-    <MetadataFile FileName="Service121.xsd" MetadataType="Schema" ID="3974595c-c92c-40eb-bd8d-380888a4dfd7" SourceId="1" SourceUrl="http://webstrar64.fulton.asu.edu/Page0/Service1.svc?xsd=xsd0" />
-    <MetadataFile FileName="Service11.wsdl" MetadataType="Wsdl" ID="d9c514a1-4451-4dd2-80b8-ca2bc145c99e" SourceId="1" SourceUrl="http://webstrar64.fulton.asu.edu/Page0/Service1.svc?wsdl" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="032ca1cc-eba3-4b46-9f7e-4fc852b85f79" SourceId="1" SourceUrl="http://localhost:50181/Service1.svc?wsdl" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="91f7e796-d429-47d1-9378-a4181b08e158" SourceId="1" SourceUrl="http://localhost:50181/Service1.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service11.xsd" MetadataType="Schema" ID="b22040a4-1c40-49ac-8280-50719bb098cc" SourceId="1" SourceUrl="http://localhost:50181/Service1.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

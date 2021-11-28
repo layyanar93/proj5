@@ -6,6 +6,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveAndRetrieve", "SaveAndRetrieve.csproj", "{AC7C44EA-E5B8-4BFF-9341-BFC276BACB63}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveAndRetrieveTryIt", "..\SaveAndRetrieveTryIt\SaveAndRetrieveTryIt.csproj", "{CDAD55EE-C376-4EA2-9246-C404BF7B0C8C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{19CC0215-51EF-4B5A-8F13-56F682E31087} = {19CC0215-51EF-4B5A-8F13-56F682E31087}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsFocus", "..\..\..\Project 3 Chance's Part\NewsFocus\NewsFocus\NewsFocus.csproj", "{19CC0215-51EF-4B5A-8F13-56F682E31087}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{CDAD55EE-C376-4EA2-9246-C404BF7B0C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDAD55EE-C376-4EA2-9246-C404BF7B0C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDAD55EE-C376-4EA2-9246-C404BF7B0C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19CC0215-51EF-4B5A-8F13-56F682E31087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19CC0215-51EF-4B5A-8F13-56F682E31087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19CC0215-51EF-4B5A-8F13-56F682E31087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19CC0215-51EF-4B5A-8F13-56F682E31087}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

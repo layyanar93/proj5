@@ -48,5 +48,21 @@ namespace SaveAndRetrieveTryIt
             string uname = "Lohitha";
             printLabel.Text = myAddClient.getStringFromFile(uname);
         }
+
+        protected void searchButton_Click(object sender, EventArgs e)
+        {
+            searchServiceReference.Service1Client mySearchClient = new searchServiceReference.Service1Client();
+            string[] urls = mySearchClient.NewsFocus(keywordsTextBox.Text);
+            BulletedList1.Items.Clear();
+            if (urls.Length != 0)
+                foreach (string url in urls)
+                {
+                    BulletedList1.Items.Add(url);
+                }
+            else
+            {
+                BulletedList1.Items.Add("Error with topics");
+            }
+        }
     }
 }

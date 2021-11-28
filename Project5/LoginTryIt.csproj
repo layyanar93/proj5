@@ -108,12 +108,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <None Include="Connected Services\EncDecServiceReference\configuration91.svcinfo" />
-    <None Include="Connected Services\EncDecServiceReference\configuration.svcinfo" />
-    <None Include="Connected Services\EncDecServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
     <None Include="Connected Services\imageVerServiceReference\Service.wsdl" />
     <None Include="Connected Services\imageVerServiceReference\Service.xsd">
       <SubType>Designer</SubType>
@@ -124,16 +118,16 @@
     <None Include="Connected Services\imageVerServiceReference\Service2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\loginServiceReference\configuration91.svcinfo" />
-    <None Include="Connected Services\loginServiceReference\configuration.svcinfo" />
-    <None Include="Connected Services\loginServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
     <None Include="Connected Services\imageVerServiceReference\Service.disco" />
     <None Include="Connected Services\imageVerServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\imageVerServiceReference\configuration.svcinfo" />
     <None Include="Connected Services\imageVerServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\loginServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\loginServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\loginServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -155,18 +149,11 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <None Include="Connected Services\EncDecServiceReference\Service1.wsdl" />
-    <None Include="Connected Services\EncDecServiceReference\Service1.xsd">
+    <None Include="Connected Services\loginServiceReference\Service1.wsdl" />
+    <None Include="Connected Services\loginServiceReference\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\EncDecServiceReference\Service11.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\loginServiceReference\Service11.wsdl" />
-    <None Include="Connected Services\loginServiceReference\Service12.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\loginServiceReference\Service121.xsd">
+    <None Include="Connected Services\loginServiceReference\Service11.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -218,11 +205,6 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Connected Services\EncDecServiceReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Connected Services\imageVerServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -319,7 +301,6 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\EncDecServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\imageVerServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\loginServiceReference\" />
   </ItemGroup>
