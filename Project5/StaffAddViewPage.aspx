@@ -25,14 +25,12 @@
         <div>
             <br />            
             <br />            
+            <strong style="font-family: Calibri">View members.xml file :</strong><br />
+            <asp:Button ID="viewButton" runat="server" OnClick="viewButton_Click" Text="View" />
             <br />
-        <strong style="font-family: Calibri">Remove User:</strong><br />
-            <asp:Label ID="Label1" runat="server" Text="username:  " Font-Names="Calibri"></asp:Label>
-            <asp:TextBox ID="removeTextBox" runat="server"></asp:TextBox>
             <br />
-            <asp:Button ID="removeButton" runat="server" OnClick="removeButton_Click" Text="Delete" />
+            <asp:TextBox ID="viewResultTextBox" runat="server" Height="323px" TextMode="MultiLine" Width="632px"></asp:TextBox>
             <br />
-            <asp:Label ID="deleteUserLabel" runat="server" Text="Delete User Result" Font-Names="Calibri"></asp:Label>
         </div>
     </form>
 </body>
