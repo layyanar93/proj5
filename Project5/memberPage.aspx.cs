@@ -38,7 +38,9 @@ namespace Project5
             {
                 Response.OutputStream.Write(buffer, 0, count);
                 count = stm1.Read(buffer, 0, bufferSize);
+                
             }
+            Response.End();
         }
 
         protected void SaveButton_Click(object sender, EventArgs e)
