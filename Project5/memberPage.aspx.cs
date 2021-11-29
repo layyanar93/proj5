@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Runtime.Serialization;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -51,18 +53,12 @@ namespace Project5
 
         protected void searchButton_Click(object sender, EventArgs e)
         {
-            searchServiceReference.Service1Client mySearchClient = new searchServiceReference.Service1Client();
-            string[] urls = mySearchClient.NewsFocus(keywordsTextBox.Text);
-            BulletedList1.Items.Clear();
-            if (urls.Length != 0)
-                foreach (string url in urls)
-                {
-                    BulletedList1.Items.Add(url);
-                }
-            else
-            {
-                BulletedList1.Items.Add("Error with topics");
-            }
+
+        }
+
+        protected void searchButton_Click1(object sender, EventArgs e)
+        {
+
         }
     }
 }
