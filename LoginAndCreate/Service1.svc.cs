@@ -31,6 +31,7 @@ namespace LoginAndCreate
         string pathVar1;
         string pathVar2;
 
+        //Creator: Lohitha Ayyanar
         public string createUser(string username, string password, string type)
         {
             if (username.Length >= 5 && password.Length >= 5 && !username.Equals(password))
@@ -86,7 +87,9 @@ namespace LoginAndCreate
             return returnVal2;
         }
 
-        // TODO: add redirect code in here
+        //writes the new username and password to file. if it's being called by staff, it will write to staff.xml
+        //if called by a user , will write to members.xml
+        //Creator: Lohitha Ayyanar
         public void writeToFile(string username, string password, string type)
         {
             if (!fail)
@@ -130,6 +133,8 @@ namespace LoginAndCreate
             }
         }
 
+        //Creator: Lohitha Ayyanar
+        //Staff can see the members.xml file to see user credentials.
         public string viewMembers()
         {
             string file = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/members.xml");
@@ -144,6 +149,7 @@ namespace LoginAndCreate
             return returnString;
         }
 
+        //Creator: Chance Engstrom
         public string AuthUser(string authString, string type) //authString format is user.password
         {
             string fLocation = Path.Combine(HttpRuntime.AppDomainAppPath,

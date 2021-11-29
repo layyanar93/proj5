@@ -9,6 +9,7 @@ namespace Project5
 {
     public partial class LoginOrSignUpPage : System.Web.UI.Page
     {
+        //LoginOrSignUpPage.aspx Developed by Chance Engstrom
         void GenerateImage()
         {
             imageVerServiceReference.ServiceClient fromService = new imageVerServiceReference.ServiceClient();
