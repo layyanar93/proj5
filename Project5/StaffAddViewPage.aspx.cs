@@ -24,13 +24,12 @@ namespace Project5
             addLabel.Text = createUserResult;
         }
 
-        protected void removeButton_Click(object sender, EventArgs e)
+        protected void viewButton_Click(object sender, EventArgs e)
         {
-            string deleteUser = nameTextBox.Text;
-            //loginServiceReference.Service1Client myClient = new loginServiceReference.Service1Client();
-            loginServiceReference.Service1Client client = new loginServiceReference.Service1Client();
-            string deleteResult = client.removeMember(deleteUser);
-            deleteUserLabel.Text = deleteResult;
+            loginServiceReference.Service1Client myClient = new loginServiceReference.Service1Client();
+            string viewResult = myClient.viewMembers();
+            viewResultTextBox.Text = viewResult;
+            //viewLabel.Text = viewResult;
         }
     }
 }

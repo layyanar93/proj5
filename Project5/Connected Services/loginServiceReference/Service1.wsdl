@@ -24,11 +24,11 @@
   <wsdl:message name="IService1_AuthUser_OutputMessage">
     <wsdl:part name="parameters" element="tns:AuthUserResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_removeMember_InputMessage">
-    <wsdl:part name="parameters" element="tns:removeMember" />
+  <wsdl:message name="IService1_viewMembers_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewMembers" />
   </wsdl:message>
-  <wsdl:message name="IService1_removeMember_OutputMessage">
-    <wsdl:part name="parameters" element="tns:removeMemberResponse" />
+  <wsdl:message name="IService1_viewMembers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewMembersResponse" />
   </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="createUser">
@@ -43,9 +43,9 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/AuthUser" message="tns:IService1_AuthUser_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/AuthUserResponse" message="tns:IService1_AuthUser_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="removeMember">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/removeMember" message="tns:IService1_removeMember_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/removeMemberResponse" message="tns:IService1_removeMember_OutputMessage" />
+    <wsdl:operation name="viewMembers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewMembers" message="tns:IService1_viewMembers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewMembersResponse" message="tns:IService1_viewMembers_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -77,8 +77,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="removeMember">
-      <soap:operation soapAction="http://tempuri.org/IService1/removeMember" style="document" />
+    <wsdl:operation name="viewMembers">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewMembers" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -199,7 +199,7 @@
             </td>
             <td valign="top" width="192">
                 <p class="MsoNormal">
-                    <b><span lang="EN">Remove user service:</span></b><span lang="EN"> Staff can remove a member from the application as an admin action.<u><span><o:p></o:p></span></u></span></p>
+                    <b><span lang="EN">View User Credentials:</span></b><span lang="EN"> Staff can view the member.xml as an admin action.<u><span><o:p></o:p></span></u></span></p>
             </td>
             <td valign="top" width="234">
                 <p class="MsoNormal">
