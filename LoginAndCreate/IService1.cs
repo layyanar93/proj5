@@ -23,6 +23,8 @@ namespace LoginAndCreate
         [OperationContract]
         string AuthUser(string authString, string type);
 
+        [OperationContract]
+        string removeMember(string username);
     }
 
 }

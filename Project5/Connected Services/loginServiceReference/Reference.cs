@@ -32,6 +32,12 @@ namespace Project5.loginServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AuthUser", ReplyAction="http://tempuri.org/IService1/AuthUserResponse")]
         System.Threading.Tasks.Task<string> AuthUserAsync(string authString, string type);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/removeMember", ReplyAction="http://tempuri.org/IService1/removeMemberResponse")]
+        string removeMember(string username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/removeMember", ReplyAction="http://tempuri.org/IService1/removeMemberResponse")]
+        System.Threading.Tasks.Task<string> removeMemberAsync(string username);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -83,6 +89,14 @@ namespace Project5.loginServiceReference {
         
         public System.Threading.Tasks.Task<string> AuthUserAsync(string authString, string type) {
             return base.Channel.AuthUserAsync(authString, type);
+        }
+        
+        public string removeMember(string username) {
+            return base.Channel.removeMember(username);
+        }
+        
+        public System.Threading.Tasks.Task<string> removeMemberAsync(string username) {
+            return base.Channel.removeMemberAsync(username);
         }
     }
 }

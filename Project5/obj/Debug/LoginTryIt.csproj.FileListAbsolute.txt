@@ -214,7 +214,6 @@ C:\Users\Aravind PC\source\repos\proj5\Project5\bin\Newtonsoft.Json.xml
 C:\Users\Aravind PC\source\repos\proj5\Project5\bin\Antlr3.Runtime.pdb
 C:\Users\Aravind PC\source\repos\proj5\Project5\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Aravind PC\source\repos\proj5\Project5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Aravind PC\source\repos\proj5\Project5\obj\Debug\LoginTryIt.csproj.AssemblyReference.cache
 C:\Users\Aravind PC\source\repos\proj5\Project5\obj\Debug\LoginTryIt.csproj.CoreCompileInputs.cache
 C:\Users\Aravind PC\source\repos\proj5\Project5\obj\Debug\LoginTryIt.csproj.CopyComplete
 C:\Users\Aravind PC\source\repos\proj5\Project5\obj\Debug\Project5.dll

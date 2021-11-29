@@ -148,11 +148,11 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <None Include="Connected Services\loginServiceReference\Service11.wsdl" />
-    <None Include="Connected Services\loginServiceReference\Service12.xsd">
+    <None Include="Connected Services\loginServiceReference\Service1.wsdl" />
+    <None Include="Connected Services\loginServiceReference\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\loginServiceReference\Service121.xsd">
+    <None Include="Connected Services\loginServiceReference\Service11.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />

@@ -22,6 +22,18 @@
             <br />
             <asp:Label ID="addLabel" runat="server" Text="Add Staff Result" Font-Names="Calibri"></asp:Label>
         </div>
+        <div>
+            <br />            
+            <br />            
+            <br />
+        <strong style="font-family: Calibri">Remove User:</strong><br />
+            <asp:Label ID="Label1" runat="server" Text="username:  " Font-Names="Calibri"></asp:Label>
+            <asp:TextBox ID="removeTextBox" runat="server"></asp:TextBox>
+            <br />
+            <asp:Button ID="removeButton" runat="server" OnClick="removeButton_Click" Text="Delete" />
+            <br />
+            <asp:Label ID="deleteUserLabel" runat="server" Text="Delete User Result" Font-Names="Calibri"></asp:Label>
+        </div>
     </form>
 </body>
 </html>
