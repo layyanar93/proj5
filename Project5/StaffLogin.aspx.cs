@@ -27,23 +27,11 @@ namespace Project5
             string type = "admin";
             string resultText = myClient.userLogin(username, password, type);
             loginLabel.Text = resultText;
-            HttpCookie myCookies = Request.Cookies["recipieApp"];
             if (loginLabel.Text == "Authenticated")
             {
-                if (myCookies["Name"] != "")
-                {
-                    myCookies = new HttpCookie("recipieApp");
-                    myCookies["Name"] = "";
-                    Response.Cookies.Add(myCookies);
-                }
-                else
-                {
-                    myCookies = new HttpCookie("recipieApp");
-                    myCookies["Name"] = usernameTextBox.Text;
-                    myCookies.Expires = DateTime.Now.AddMonths(6);
-                    Response.Cookies.Add(myCookies);
-                    Response.Redirect("StaffAddViewPage.aspx");
-                }
+                Session["username"] = username;
+                Response.Redirect("StaffAddViewPage.aspx");
+                
             }
 
         }
