@@ -6,7 +6,7 @@
 <head runat="server">
 
 <title></title>
-        <h1 style="font-family: 'Arial Unicode MS'; background-color: #FFFFFF; color: #800000;">Recipe Vault</h1>
+        <h1 style="font-family: 'Arial Unicode MS'; background-color: #FFFFFF; color: #800000;">sRecipe Vault</h1>
 </head>
         <body>
             <form id="form1" runat="server" style="font-family: Calibri; width: 619px;">

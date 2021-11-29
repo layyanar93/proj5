@@ -120,6 +120,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\searchServiceReference\Service1.disco" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -145,14 +146,14 @@
     <None Include="Connected Services\saveServiceReference\Service11.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\searchServiceReference\Service1.wsdl" />
-    <None Include="Connected Services\searchServiceReference\Service1.xsd">
+    <None Include="Connected Services\searchServiceReference\Service11.wsdl" />
+    <None Include="Connected Services\searchServiceReference\Service13.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\searchServiceReference\Service11.xsd">
+    <None Include="Connected Services\searchServiceReference\Service131.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\searchServiceReference\Service12.xsd">
+    <None Include="Connected Services\searchServiceReference\Service132.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
