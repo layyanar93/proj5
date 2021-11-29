@@ -12,7 +12,7 @@ namespace SaveAndRetrieveTryIt
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string username = "Lohitha";
+            string username = (string)Session["username"];
             Label2.Text = "Welcome " + username+ "!" ;
             //string username = (String)Session[username];
         }
@@ -20,7 +20,7 @@ namespace SaveAndRetrieveTryIt
         protected void downloadButton_Click(object sender, EventArgs e)
         {
             saveServiceReference.Service1Client myAddClient = new saveServiceReference.Service1Client();
-            string username = "Lohitha";
+            string username = (string)Session["username"];
             string toSave = myAddClient.getStringFromFile(username);
             string fileToSave = Path.Combine(downloadTextBox.Text, "toSave.xml");
             using (var fs = File.Open(fileToSave, FileMode.OpenOrCreate, FileAccess.ReadWrite))
@@ -36,7 +36,7 @@ namespace SaveAndRetrieveTryIt
         {
             saveServiceReference.Service1Client myAddClient = new saveServiceReference.Service1Client();
             string textToSave = saveTextBox.Text;
-            string usernameToSave = "Lohitha";
+            string usernameToSave = (string)Session["username"];
             string result = myAddClient.putStringToFile(usernameToSave, textToSave);
             saveLabel.Text = result;
         }
@@ -45,7 +45,7 @@ namespace SaveAndRetrieveTryIt
         protected void RButton_Click(object sender, EventArgs e)
         {
             saveServiceReference.Service1Client myAddClient = new saveServiceReference.Service1Client();
-            string uname = "Lohitha";
+            string uname = (string)Session["username"];
             printLabel.Text = myAddClient.getStringFromFile(uname);
         }
 
