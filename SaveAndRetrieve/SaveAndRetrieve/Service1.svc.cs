@@ -10,6 +10,7 @@ using System.Text;
 using System.Xml.Linq;
 using System.Xml;
 using System.Net;
+using EncryptDecryptLib;
 
 namespace SaveAndRetrieve
 {
@@ -23,19 +24,19 @@ namespace SaveAndRetrieve
         {
             try
             {
-
+                string encryptedRecipie = EncryptDecrypt.Encrypt(value);
                 string fileToWrite = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/recipes.xml");
                 XElement file = XElement.Load(fileToWrite);
                 file.Add(new XElement("User",
                     new XAttribute("Username", username),
-                    new XElement("Recipe", value)));
+                    new XElement("Recipe", encryptedRecipie)));
                 //doc.LoadXml(fileToWrite.Substring(fileToWrite.IndexOf(Environment.NewLine)));
                 //var node = doc.SelectSingleNode("//Recipes/[Username='Lohitha']
                 file.Save(fileToWrite);
                 returnString = "success";
             }
                 catch (Exception ecx) { returnString = ecx.Message; }
-            return returnString;
+            return returnString; 
         }
 
         public string getStringFromFile(string username)
@@ -46,7 +47,7 @@ namespace SaveAndRetrieve
             string toPrint = "Recipes: ";
             foreach (XElement u in nodes.Nodes())
             {
-                toPrint = toPrint + u.Value;
+                toPrint = toPrint +"\n----------------------------------------------\n"+ EncryptDecrypt.Decrypt(u.Value);
             }
             toDownload = toPrint;
             returnString = toPrint;

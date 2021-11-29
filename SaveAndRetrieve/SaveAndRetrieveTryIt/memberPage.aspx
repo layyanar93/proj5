@@ -17,7 +17,7 @@
                     Add new recipe to vault:
                 </p>
                 <p style="width: 324px">
-                    <asp:TextBox ID="saveTextBox" runat="server" Height="240px" Width="305px"></asp:TextBox>
+                    <asp:TextBox ID="saveTextBox" runat="server" Height="240px" Width="305px" TextMode="MultiLine"></asp:TextBox>
 &nbsp;<asp:Button ID="SaveButton" runat="server" OnClick="SaveButton_Click" Text="Save" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="saveLabel" runat="server"></asp:Label>
