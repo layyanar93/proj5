@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project5
-{
-
-
-    public partial class memberPage
-    {
-
+namespace Project5 {
+    
+    
+    public partial class memberPage {
+        
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
+        
         /// <summary>
         /// Label2 control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
-
+        
         /// <summary>
         /// saveTextBox control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox saveTextBox;
-
+        
         /// <summary>
         /// SaveButton control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SaveButton;
-
+        
         /// <summary>
         /// saveLabel control.
         /// </summary>
@@ -58,7 +56,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label saveLabel;
-
+        
         /// <summary>
         /// RButton control.
         /// </summary>
@@ -67,7 +65,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button RButton;
-
+        
         /// <summary>
         /// printLabel control.
         /// </summary>
@@ -76,7 +74,16 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label printLabel;
-
+        
+        /// <summary>
+        /// printBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox printBox;
+        
         /// <summary>
         /// downloadTextBox control.
         /// </summary>
@@ -85,7 +92,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox downloadTextBox;
-
+        
         /// <summary>
         /// downloadButton control.
         /// </summary>
@@ -94,7 +101,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button downloadButton;
-
+        
         /// <summary>
         /// keywordsTextBox control.
         /// </summary>
@@ -103,7 +110,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox keywordsTextBox;
-
+        
         /// <summary>
         /// searchButton control.
         /// </summary>
@@ -112,7 +119,7 @@ namespace Project5
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button searchButton;
-
+        
         /// <summary>
         /// BulletedList1 control.
         /// </summary>

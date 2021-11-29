@@ -31,6 +31,7 @@
                 <br />
                 <asp:Label ID="printLabel" runat="server" Text="Print Result"></asp:Label>
                 <br />
+                <asp:TextBox ID="printBox" runat="server" Height="213px" ReadOnly="True" TextMode="MultiLine" Width="305px"></asp:TextBox>
                 <br />
                 <br />
                 Download your recipes:

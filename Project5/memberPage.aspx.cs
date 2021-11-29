@@ -46,7 +46,7 @@ namespace Project5
         {
             saveServiceReference.Service1Client myAddClient = new saveServiceReference.Service1Client();
             string uname = (string)Session["username"];
-            printLabel.Text = myAddClient.getStringFromFile(uname);
+            printBox.Text = myAddClient.getStringFromFile(uname);
         }
 
         protected void searchButton_Click(object sender, EventArgs e)
