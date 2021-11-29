@@ -36,9 +36,6 @@
                 <br />
                 Download your recipes:
                 <br />
-                Enter download location:
-                <asp:TextBox ID="downloadTextBox" runat="server" Width="360px">e.g.  C:\Users\John\source\examples\Recipes\</asp:TextBox>
-                <br />
                 <asp:Button ID="downloadButton" runat="server" OnClick="downloadButton_Click" Text="Download" />
                 <br />
                 <br />

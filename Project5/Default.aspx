@@ -237,28 +237,6 @@
             </td>
             <td valign="top" width="109">
                 <p class="MsoNormal">
-                    <b><span lang="EN">svc</span></b><span lang="EN"><o:p></o:p></span></p>
-            </td>
-            <td valign="top" width="192">
-                <p class="MsoNormal">
-                    <b><span lang="EN">Web Search service:</span></b><span lang="EN"> User can search for links to recipes on the web through search bar (input string keywords)<o:p></o:p></span></p>
-            </td>
-            <td valign="top" width="234">
-                <p class="MsoNormal">
-                    <span lang="EN">- Uses bing search engine, then parses the links from webpage. <o:p></o:p></span>
-                </p>
-                <p class="MsoNormal">
-                    <span lang="EN">-This is used in the member page after login. <o:p></o:p></span>
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td valign="top" width="124">
-                <p class="MsoNormal">
-                    <span lang="EN">Chance Engstrom<o:p></o:p></span></p>
-            </td>
-            <td valign="top" width="109">
-                <p class="MsoNormal">
                     <b><span lang="EN">svc<o:p></o:p></span></b></p>
             </td>
             <td valign="top" width="192">
