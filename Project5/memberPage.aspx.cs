@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Runtime.Serialization;
+using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -24,13 +25,19 @@ namespace Project5
             saveServiceReference.Service1Client myAddClient = new saveServiceReference.Service1Client();
             string username = (string)Session["username"];
             string toSave = myAddClient.getStringFromFile(username);
-            string fileToSave = Path.Combine(downloadTextBox.Text, "toSave.xml");
-            using (var fs = File.Open(fileToSave, FileMode.OpenOrCreate, FileAccess.ReadWrite))
+            Stream stm1 = new MemoryStream(Encoding.UTF8.GetBytes(toSave ?? ""));
+            Int16 bufferSize = 1024;
+            byte[] buffer = new byte[bufferSize + 1];
+
+            Response.ContentType = "text/plain";
+            Response.AddHeader("Content-Disposition","attachment; filename=\"recipes\";");
+            Response.BufferOutput = false;
+            int count = stm1.Read(buffer, 0, bufferSize);
+
+            while (count > 0)
             {
-                using (var sw = new StreamWriter(fs))
-                {
-                    sw.WriteLine(toSave);
-                }
+                Response.OutputStream.Write(buffer, 0, count);
+                count = stm1.Read(buffer, 0, bufferSize);
             }
         }
 
