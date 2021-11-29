@@ -114,13 +114,19 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\saveServiceReference\Service11.wsdl" />
+    <None Include="Connected Services\saveServiceReference\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\saveServiceReference\Service121.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\searchServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\searchServiceReference\configuration.svcinfo" />
     <None Include="Connected Services\searchServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Connected Services\searchServiceReference\Service1.disco" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -139,14 +145,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <None Include="Connected Services\saveServiceReference\Service1.wsdl" />
-    <None Include="Connected Services\saveServiceReference\Service1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\saveServiceReference\Service11.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\searchServiceReference\Service11.wsdl" />
+    <None Include="Connected Services\searchServiceReference\Service1.wsdl" />
     <None Include="Connected Services\searchServiceReference\Service13.xsd">
       <SubType>Designer</SubType>
     </None>

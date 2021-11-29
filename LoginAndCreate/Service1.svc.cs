@@ -28,6 +28,8 @@ namespace LoginAndCreate
         private string returnVal1;
         private string returnVal2;
         private Boolean fail = false;
+        string pathVar1;
+        string pathVar2;
 
         public string createUser(string username, string password, string type)
         {
@@ -38,14 +40,18 @@ namespace LoginAndCreate
                 if (type == "admin")
                 {
                     fileToRead = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/staff.xml");
+                    pathVar1 = "Admins";
+                    pathVar2 = "Staff";
                 }
                 else if (type == "user")
                 {
                     fileToRead = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data/members.xml");
+                    pathVar1 = "Members";
+                    pathVar2 = "Member";
                 }
 
                 XDocument doc = XDocument.Load(fileToRead);
-                var element = doc.Element("Members").Descendants("Member").Where(a => a.Element("Username").Value.Equals(username));
+                var element = doc.Element(pathVar1).Descendants(pathVar2).Where(a => a.Element("Username").Value.Equals(username));
 
                 if (element.Count() == 0 )
                 {
@@ -134,13 +140,14 @@ namespace LoginAndCreate
             {
                 //parse through xml and find the username which was passed in, then remove that element
                 XDocument doc = XDocument.Parse(xml);
-                doc.Descendants().Elements("Member").Where(x => x.Element("Username")?.Value == username).Remove();
+                doc.Elements("Members").Elements().Where(x => x.Element("Username")?.Value == username).Remove();
                 returnString = "Successfully removed member.";
             }
             catch (Exception ecx) { returnString = ecx.Message; }
 
             return returnString;
         }
+
 
         public string AuthUser(string authString, string type) //authString format is user.password
         {

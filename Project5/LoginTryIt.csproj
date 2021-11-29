@@ -130,6 +130,25 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\loginServiceReference\Service1.wsdl" />
+    <None Include="Connected Services\loginServiceReference\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\loginServiceReference\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\saveServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\saveServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\saveServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\searchServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\searchServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\searchServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -148,16 +167,27 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <None Include="Connected Services\loginServiceReference\Service1.wsdl" />
-    <None Include="Connected Services\loginServiceReference\Service1.xsd">
+    <None Include="Connected Services\saveServiceReference\Service1.wsdl" />
+    <None Include="Connected Services\saveServiceReference\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\loginServiceReference\Service11.xsd">
+    <None Include="Connected Services\saveServiceReference\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\searchServiceReference\Service1.wsdl" />
+    <None Include="Connected Services\searchServiceReference\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\searchServiceReference\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\searchServiceReference\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="imageProcess.aspx" />
     <Content Include="LoginOrSignUpPage.aspx" />
+    <Content Include="memberPage.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -214,6 +244,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\saveServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\searchServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -244,6 +284,13 @@
     </Compile>
     <Compile Include="LoginOrSignUpPage.aspx.designer.cs">
       <DependentUpon>LoginOrSignUpPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberPage.aspx.cs">
+      <DependentUpon>memberPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberPage.aspx.designer.cs">
+      <DependentUpon>memberPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -302,6 +349,8 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\imageVerServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\loginServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\saveServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\searchServiceReference\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -81,7 +81,7 @@ namespace Project5
                 }
                 Session["username"] = username;
                 //loginLabel.Text = (String)Session["username"];
-                Response.Redirect("SaveAndRetrieve.aspx");
+                Response.Redirect("memberPage.aspx");
             }
         }
 
@@ -102,7 +102,7 @@ namespace Project5
             if (loginLabel.Text == "Authenticated")
             {
                 Session["username"] = newUsername;
-                Response.Redirect("SaveAndRetrieve.aspx");
+                Response.Redirect("memberPage.aspx");
             }
 
         }
