@@ -29,8 +29,9 @@
         </div>
         <div style="font-family: Calibri">
             <strong>New User:
-            </strong>
             <br />
+            </strong>
+            (must complete image verifier to enter password)<br />
             username:
             <asp:TextBox ID="newUserTextBox" runat="server"></asp:TextBox>
             <br />
@@ -40,13 +41,15 @@
             <asp:Button ID="createUserButton" runat="server" Text="Create User" OnClick="createUserButton_Click" />
             <br />
             <br />
-            (must complete image verifier to register new user)<br />
+            <br />
             <div>
                 <asp:Image ID="Image1" Visible="false" runat="server" />
                 <asp:Button ID="showImageButton" runat="server" OnClick="showImageButton_Click" Text="Show Image" Width="167px" />
                 <br />
                 <br />
-                Enter string here:
+                Add the numbers shown.
+                <br />
+                Enter solution here:
                 <asp:TextBox ID="TextBox1" runat="server" Width="98px"></asp:TextBox>
                 <br />
                 <asp:Button ID="buttonSubmitImage" runat="server" OnClick="buttonSubmitImage_Click" Text="Submit" Width="120px" />

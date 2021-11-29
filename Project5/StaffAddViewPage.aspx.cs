@@ -13,7 +13,7 @@ namespace Project5
         {
 
         }
-
+        //Developed by Lohitha Ayyanar
         protected void addButton_Click(object sender, EventArgs e)
         {
             string newUsername = nameTextBox.Text;
@@ -24,6 +24,7 @@ namespace Project5
             addLabel.Text = createUserResult;
         }
 
+        //Developed by Lohitha Ayyanar
         protected void viewButton_Click(object sender, EventArgs e)
         {
             loginServiceReference.Service1Client myClient = new loginServiceReference.Service1Client();
