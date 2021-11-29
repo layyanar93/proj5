@@ -3,7 +3,8 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">&nbsp;<asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="Maroon" Text="Recipe Vault"></asp:Label>
 
         <div dir="ltr" style="font-family: Calibri">
-            This application is a recipe storage application, where user can sign up to securely store their recipes in one place.e.<br />
+            This application is a recipe storage application, where user can sign up to securely store their recipes in one place.<br />
+            <br />
             <br />
             The following functionality is offered: <br />
             1) If general user, click &quot;Member&quot; button to be redirected to the Login/Create user page.<br />
@@ -14,7 +15,9 @@
 &nbsp;&nbsp;&nbsp; - <strong>Testing:</strong> To verify authentication service works, attempt to log in with an incorrect password.
             <br />
 &nbsp;&nbsp;&nbsp; - <strong>Testing: </strong>To verify encryption/decryption works, after creating username/password, check the members.xml file to ensure password is stored encrypted. <br />
-            4)&nbsp; Staff Page: ......<br />
+            4)&nbsp; Staff Page: This is an adminstrative page where staff members can add other staff members to the application, and also remove members from the members.xml file to revoke access.<br />
+&nbsp;&nbsp;&nbsp;&nbsp; <strong>- Testing: </strong>To verify staff members can be added, add the username/password for new staff and login as that staff member upon new session. Alternatively, you can check the staff.xml file to see if username/password was recorded.<br />
+&nbsp;&nbsp;&nbsp; - Testing: To verify remove member functionality, input a username to remove and then verify that it is removed from the members.xml file. <br />
             5) User can type recipe in textbox to save in secure storage service.
             <br />
             <strong>&nbsp;&nbsp;&nbsp; - Testing:</strong> To verify Save functionality works, type a recipe (string) into text box. Click &quot;Save&quot;. Logout or restart and Log back into application, then click &quot;Retrieve&quot; to verify the previously saved string is shown. Alternatively, check the recipes.xml file to see if the new data was saved.

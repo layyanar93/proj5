@@ -25,6 +25,7 @@ namespace LoginAndCreate
 
         [OperationContract]
         string removeMember(string username);
+
     }
 
 }

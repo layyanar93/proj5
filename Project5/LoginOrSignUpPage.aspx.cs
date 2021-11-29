@@ -21,6 +21,8 @@ namespace Project5
         }
         protected void Page_Load(object sender, EventArgs e)
         {
+            string numUsers = Application["VisitorCount"].ToString();
+            globalLabel.Text = "Number of visitors: "+ numUsers;
             Image1.ImageUrl = "~/imageProcess.aspx";
             HttpCookie myCookies = Request.Cookies["recipieApp"];
             if (((myCookies == null) || (myCookies["Name"] == "")) != true && usernameTextBox.Text == "")

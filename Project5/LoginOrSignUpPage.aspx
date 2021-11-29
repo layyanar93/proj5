@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
         <h1 style="font-family: 'Arial Unicode MS'; background-color: #FFFFFF; color: #800000;">Recipe Vault</h1>
-        <p class="lead">Keep your family recipes in a secure place.</p>
+        <p class="lead" style="font-family: Calibri">Keep your family recipes in a secure place.</p>
+        <asp:Label ID="globalLabel" runat="server" Font-Names="Calibri" Text="globalLabel"></asp:Label>
 <title></title>
 </head>
 <body>
