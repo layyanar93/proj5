@@ -42,13 +42,6 @@
                 <asp:Button ID="downloadButton" runat="server" OnClick="downloadButton_Click" Text="Download" />
                 <br />
                 <br />
-                Search the web for a new recipe:
-                <br />
-                Type key words here:
-                <asp:TextBox ID="keywordsTextBox" runat="server" Width="388px"></asp:TextBox>
-                <asp:Button ID="searchButton" runat="server" Text="Search" />
-                <asp:BulletedList ID="BulletedList1" runat="server" DisplayMode="HyperLink">
-</asp:BulletedList>
     </form>
 </body>
 </html>

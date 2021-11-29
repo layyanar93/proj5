@@ -31,17 +31,31 @@ namespace Project5
 
         protected void encryptButton_Click(object sender, EventArgs e)
         {
-            string toTest = TextBox1.Text;
-            string encString = EncryptDecrypt.Encrypt(toTest);
-            TextBox1.Text = encString;
+            try
+            {
+                string toTest = TextBox1.Text;
+                string encString = EncryptDecrypt.Encrypt(toTest);
+                TextBox1.Text = encString;
+            }
+            catch
+            {
+                return;
+            }
 
         }
 
         protected void decryptButton_Click(object sender, EventArgs e)
         {
-            string toTest = TextBox1.Text;
-            string decString = EncryptDecrypt.Decrypt(toTest);
-            TextBox1.Text = decString;
+            try
+            {
+                string toTest = TextBox1.Text;
+                string decString = EncryptDecrypt.Decrypt(toTest);
+                TextBox1.Text = decString;
+            }
+            catch
+            {
+                return;
+            }
         }
     }
 }

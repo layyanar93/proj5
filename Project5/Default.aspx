@@ -42,7 +42,7 @@
     <br />
     <strong>Encrypt/Decrypt Service Test</strong><br />
     Type a string below to encrypt or decrypt:<br />
-    <asp:TextBox ID="TextBox1" runat="server" Width="246px"></asp:TextBox>
+    <asp:TextBox ID="TextBox1" runat="server" Width="312px" Height="82px" TextMode="MultiLine"></asp:TextBox>
     <br />
     <asp:Button ID="encryptButton" runat="server" OnClick="encryptButton_Click" Text="Encrypt" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
