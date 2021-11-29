@@ -16,6 +16,7 @@
             <br />
 &nbsp;&nbsp;&nbsp; - <strong>Testing: </strong>To verify encryption/decryption works, use the textbox below to encrypt/decrypt a string. Alternatively, after creating username/password, check the members.xml file to ensure password is stored encrypted. <br />
             4)&nbsp; Staff Page: This is an adminstrative page where staff members can add other staff members to the application, and also remove members from the members.xml file to revoke access.<br />
+&nbsp;&nbsp;&nbsp; ( username : &quot;TA&quot;, password : &quot;Cse445ta!&quot; has already been added to staff.xml )<br />
 &nbsp;&nbsp;&nbsp;&nbsp; <strong>- Testing: </strong>To verify staff members can be added, add the username/password for new staff and login as that staff member upon new session. Alternatively, you can check the staff.xml file to see if username/password was recorded.<br />
 &nbsp;&nbsp;&nbsp; - <strong>Testing:</strong> To verify remove member functionality, input a username to remove and then verify that it is removed from the members.xml file. <br />
             5) User can type recipe in textbox to save in secure storage service.

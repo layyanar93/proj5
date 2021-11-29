@@ -9,6 +9,7 @@ namespace Project5
 {
     public partial class StaffLogin : System.Web.UI.Page
     {
+        //Developed by Lohitha
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -34,6 +35,11 @@ namespace Project5
                 
             }
 
+        }
+
+        protected void backButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
         }
     }
 }
